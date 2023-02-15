@@ -1,0 +1,37 @@
+$fuentePrincipal : 'Montserrat', sans-serif;
+$fuente: 'Quicksand', sans-serif; 
+
+// Colores
+$negro: #000000;
+$amarillo: #E08709;
+$azul: #1b67ad;
+$blanco: #ffffff;
+$gris: #f0efef;
+$grisborder: #d3d1d1;
+$grisOscuro: #333333;
+$rojo: rgb(189, 18, 18);
+
+// Colores de dashboard
+$bg-color-principal: #F9F9FC;
+$azul-dashboard: #7065F9;
+$color-barra-lateral: #F5F5F9;
+$text-lighter: rgba(0, 0, 0, 0.7);
+$active:  #EFEEF9;
+$gradientes: linear-gradient(90deg, rgba(112,101,249,1) 0%, rgba(3,201,215,1) 100%);
+$gradientes-hover: linear-gradient(90deg, rgba(3,201,215,1) 24%, rgba(112,101,249,1) 96%);
+
+// Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+$smartwatch: 170px; 
+
+
+// Fuentes
+$delgada: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+// Separaciones
+$separacion: 5rem;

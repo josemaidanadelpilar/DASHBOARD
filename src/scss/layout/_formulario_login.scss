@@ -1,0 +1,117 @@
+.contendor-formulario{
+    width: 50%;
+
+}
+.formulario {
+    p{
+        font-size: 1.4rem;
+        color: $grisOscuro;
+        margin: 2rem 0 0;
+    }
+    legend{
+        font-size: 2rem;
+        color: $grisOscuro;
+        font-family: $fuente;
+    }
+    label{
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    // La funcio de not junto con el selector de actributos permite selecionar todo excepto el que le indiques
+    input:not([type="submit"]), 
+    textarea, 
+    select{
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    textarea{
+        height: 20rem;
+    }
+    .forma-contacto{
+        max-width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // Se usa el selector de atributos
+    input[type="radio"]{
+        margin: 0;
+        width: auto;
+    }
+}
+.logo {
+
+    margin: 0 auto;
+    width: 5rem;
+    margin-top: 2rem;
+
+}
+.titulo {
+    font-family:$fuente;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.error{
+    color: $rojo;
+    text-align: center;
+    margin: 2rem;
+    
+
+}
+@include tablet {
+    .logo {
+
+        margin: 0 auto;
+        width: 5rem;
+        margin-top: 2rem;
+    
+    }
+    .titulo {
+        font-family:$fuente;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .alerta {
+    
+    }
+    .error{
+        color: $rojo;
+        text-align: center;
+        margin: 2rem;
+        font-size: 2rem;
+    
+    }
+}
+@include smartwatch {
+    .error{
+        color: $rojo;
+        text-align: center;
+        font-size: 1rem;
+        margin: 2rem;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .logo {
+
+        margin: 0 auto;
+        width: 3rem;
+        margin-top: 2rem;
+    legend{
+        width: 1rem;
+    }
+    
+}
+}

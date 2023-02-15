@@ -1,0 +1,47 @@
+@mixin smartwatch {
+    @media (min-width: $smartwatch){
+        @content;
+    }
+}
+@mixin telefono {
+    @media (min-width: $telefono){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop){
+        @content;
+    }
+}
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+@mixin boton( $bgColor, $display ) {
+    display: $display;
+    background-color: $bgColor;
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: calc($separacion / 2);
+    text-align: center;
+    border: none;
+    // para el background del hover 
+    &:hover {
+        background-color: darken($color: $bgColor, $amount: 8);
+        cursor: pointer;
+    }
+
+}
+// @mixin nuevoMixin($transformulario) {
+//     font-size: 3rem;
+//     color: $morado;
+//     text-transformulario: $transformulario;
+// }

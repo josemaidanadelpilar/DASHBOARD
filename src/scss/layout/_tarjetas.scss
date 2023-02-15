@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+}
+@include telefono {
+    .card{
+        flex-direction: row;
+    }
+
+}
